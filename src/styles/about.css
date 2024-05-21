@@ -1,0 +1,187 @@
+.about {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #1d002c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.line-spacing {
+    width: 100%;
+    height: 20px;
+}
+
+.about .container-about {
+    color: #fff;
+    width: 80%;
+}
+
+.about .container-about .title-about {
+    font-size: 2rem;
+    font-family: "MyFontFuncity", sans-serif;
+    transition: var(--tran-03);
+}
+
+.content-date-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.content-img {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.content-img .date-contact {
+    width: 60%;
+    height: 100%;
+    top: -20px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #1d002c;
+    border-radius: 10px;
+}
+
+.content-img .date-contact .btn-cv {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-family: "MyFontFuncity";
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #1d002c;
+}
+
+.content-img .date-contact .btn-cv:hover {
+    color: #1d002c;
+    background-color: #fff;
+}
+
+.content-img .date-contact .list-contact-icons {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+}
+
+.content-img .date-contact .list-contact-icons a:hover {
+    color: #464141;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, .85);
+}
+
+.content-img .date-contact .list-contact-icons .icono-wsp {
+    color: green;
+}
+
+.content-img .date-contact .list-contact-icons .icono-fb {
+    color: blue;
+}
+
+.content-img .date-contact .list-contact-icons .icono-github {
+    color: black;
+}
+
+.about .container-about .perfil-image {
+    width: 80%;
+    height: 90%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.title-about-m {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.typed {
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #1491da;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-family: 'MyFontRancho', cursive;
+}
+
+.p-about-itle {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.about .container-about .p-about {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:1000px) {
+    .about {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .about .container-about {
+        height: 90%;
+    }
+
+    .content-date-about {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .about .container-about .title-about {
+        font-size: 1.2rem;
+    }
+
+    .about .container-about .content-img {
+        width: 80%;
+        height: 60%;
+    }
+
+    .about .container-about .content-img .perfil-image {
+        width: 80%;
+        height: 60%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .content-img .date-contact span {
+        font-size: .8rem;
+    }
+
+    .about .container-about .p-about {
+        width: 100%;
+        height: 100%;
+        font-size: .8rem;
+    }
+    .title-about-m {
+        width: 80%;
+    }
+}

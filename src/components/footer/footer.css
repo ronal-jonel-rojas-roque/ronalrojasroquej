@@ -1,0 +1,64 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    padding-right: 20px;
+    color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-left {
+    min-width: 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.window-link{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer-left .icon-window {
+    width: 90%;
+    color: white;
+    font-size: 18px;
+}
+
+.icon-window:hover {
+    color: rgb(60, 148, 230);
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-right .icon {
+   /*  width: 10%; */
+    height: 100%;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.icon:hover,
+.time:hover {
+    background-color: #666464;
+}
+
+.time {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}

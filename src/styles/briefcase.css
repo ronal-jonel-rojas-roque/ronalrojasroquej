@@ -1,0 +1,324 @@
+.Briefcase {
+    background-color: var(--body-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Briefcase h2 {
+    font-size: 1.2rem;
+    font-family: "MyFontFuncity", sans-serif;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 5rem;
+
+}
+
+.briefcase-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.briefcase-item {
+    min-width: 250px;
+    max-width: 400px;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-briefcase {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #12f7ff;
+    border-radius: 25px;
+    padding: 1rem;
+    text-align: center;
+    transition: all .4s ease;
+    background-color: #ffffff2a;    
+}
+
+.info-briefcase:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.info-briefcase .img-title {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 0.5rem #1797ff);
+}
+
+.title-briefcase {
+    font-size: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "MyFontRancho", cursive;
+    color: var(--text-color);
+
+}
+
+.span-tecnolys {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.tecnolgys {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tecnology-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: .4 all ease;
+    border-radius: 50%;
+}
+
+.tecnology-image:hover {
+    scale: 1.5;
+}
+
+.Btn-detalles {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--text-color-btn);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 3px solid #12f7ff;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    text-align: center;
+}
+
+.brief-detalle {
+    margin-top: 30px;
+}
+
+.Btn-detalles:hover {
+    background-color: #12f7ff;
+    color: var(--primary-color);
+    font-weight: 600;
+    scale: 1.1;
+}
+
+
+/*este es la parte dos del briefcase*/
+.container-briefcase {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/briefcase/fondoCielo.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.folders {
+    display: flex;
+    gap: 20px;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folder-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.folder-icon {
+    position: relative;
+    font-size: 50px;
+    color: #FFD700;
+}
+
+.folder-image {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 55%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    min-width: 80%;
+    max-width: 1000%;
+    min-height: 50%;
+    max-height: 90%;
+}
+
+.tecnology-button-brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: .8rem;
+    background-color: #122b3946;
+    color: #44A99F;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tecnology-container-brief {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    padding-top: 10px;
+    height: 100%;
+    max-height: 500px;
+    flex: 1;
+    margin-right: 20px;
+    overflow-y: auto;
+}
+
+.right-column {
+    padding: 10px 10px 10px 10px;
+    overflow-y: auto;
+    flex: 2;
+    min-width: 400px;
+    height: 100%;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-rigth-colum {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    font-family: "MyFontFuncity", cursive;
+    padding: 10px;
+}
+
+.title-strong {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "MyFontRancho", cursive;
+    padding: 10px;
+}
+
+.content-rigth-colum p {
+    margin-top: 10px;
+}
+
+/* Estilos de la lista de subcarpetas */
+.left-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 10px;
+}
+
+.right-column .img-content-briefcase {
+    width: 100%;
+    max-height: 300px;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    display: flex;
+    align-self: center;
+
+}
