@@ -11,6 +11,12 @@
 # production
 /build
 
+
+# Ignorar archivos de datos sensibles
+/data/*.json
+/data/*.csv
+
+
 # misc
 .DS_Store
 .env.local
