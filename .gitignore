@@ -15,6 +15,7 @@
 # Ignorar archivos de datos sensibles
 /data/*.json
 /data/*.csv
+/data/*.js
 
 
 # misc
