@@ -68,6 +68,13 @@ export default function Home() {
         <section id='blog' ref={blogRef}>
           <Blog />
         </section>
+        <section className='section-enlace'>
+          <div className="div">
+            <span>
+              Gracias por visitar mi portafolio
+            </span>
+          </div>
+        </section>
         <section id='end' ref={endRef}>
           <End />
         </section>

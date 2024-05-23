@@ -11,3 +11,19 @@
 body.dark .home .text {
     color: var(--text-color);
 } */
+
+.section-enlace{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-enlace span{
+    font-family: 'MyFontFuncity',sans-serif;
+
+}

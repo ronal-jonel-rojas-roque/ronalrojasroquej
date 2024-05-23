@@ -184,4 +184,8 @@
     .title-about-m {
         width: 80%;
     }
+    .Briefcase h2 ,
+    .title-contact{
+        font-size: 1.2rem;
+    }
 }

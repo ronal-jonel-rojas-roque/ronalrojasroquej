@@ -9,6 +9,7 @@
     box-shadow: 0 0 10px #000;
     background: rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
+    user-select: none;
 }
 
 .navbar-big.hidden {

@@ -3,6 +3,7 @@
     background: #1d002c;
     color: #fff;
     overflow-x: hidden;
+    user-select: none;
 }
 
 .section-first {

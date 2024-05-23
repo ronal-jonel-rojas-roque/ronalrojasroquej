@@ -13,6 +13,12 @@
     overflow: hidden;
 }
 
+/* .content-end {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+ */
 .container {
     font-size: 6px;
     width: 40em;

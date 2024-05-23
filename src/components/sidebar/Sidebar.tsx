@@ -8,7 +8,7 @@ import { HiMiniBriefcase } from "react-icons/hi2";
 import { IoAccessibilityOutline } from "react-icons/io5";
 import { GoCodespaces } from "react-icons/go";
 import { RiContactsBook3Fill } from "react-icons/ri";
-import { FaBlog } from "react-icons/fa6";
+/* import { FaBlog } from "react-icons/fa6"; */
 import { IoIosArrowForward } from "react-icons/io";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { MdOutlineWbSunny } from "react-icons/md";
@@ -106,12 +106,12 @@ export default function SidebarComponent() {
                                         <span className="text nav-text">Contacto</span>
                                     </a>
                                 </li>
-                                <li className="nav-link">
+                                {/* <li className="nav-link">
                                     <a href="#blog">
                                         <FaBlog className='bx bx-wallet icon' title="Blog" />
                                         <span className="text nav-text">Blog</span>
                                     </a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
 

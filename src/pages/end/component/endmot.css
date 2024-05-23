@@ -1,0 +1,63 @@
+.end-motiv-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.frases-motivacionales {
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.frase-content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+}
+
+.particles-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.frase {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.frase-content {
+    max-width: 300px;
+    animation: meteorAnimation 5s linear infinite alternate;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes meteorAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(80%) translateY(-50%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0) translateY(-50%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-80%) translateY(-50%);
+    }
+}
