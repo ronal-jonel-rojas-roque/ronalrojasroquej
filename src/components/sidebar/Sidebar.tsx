@@ -3,7 +3,7 @@ import "./sidebar.css"
 import { Link, useLocation } from 'react-router-dom';
 import perfil from "../../images/10.png"
 
-import { LuSearchCode } from "react-icons/lu";
+/* import { LuSearchCode } from "react-icons/lu"; */
 import { HiMiniBriefcase } from "react-icons/hi2";
 import { IoAccessibilityOutline } from "react-icons/io5";
 import { GoCodespaces } from "react-icons/go";
@@ -72,10 +72,10 @@ export default function SidebarComponent() {
                     </div>
                     <div className="menu-bar">
                         <div className="menu">
-                            <div className="search-box">
+                            {/* <div className="search-box">
                                 <LuSearchCode className='bx bx-search icon' />
                                 <input type="text" placeholder="Buscar..." className='input' />
-                            </div>
+                            </div> */}
 
                             <ul className="menu-links">
 

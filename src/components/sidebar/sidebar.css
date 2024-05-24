@@ -40,10 +40,10 @@ body.dark {
 /* ===== Sidebar ===== */
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 7%;
     left: 0;
     height: 100%;
-    min-height: 80vh;
+    max-height: 93vh;
     width: 100%;
     max-width: 250px;
     padding: 10px 14px;

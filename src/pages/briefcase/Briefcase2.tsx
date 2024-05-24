@@ -49,11 +49,11 @@ export default function Briefcase2() {
                 <div className="file-explorer">
                     <div className="folders">
                         <div className="folder" onClick={() => openModal('projects')}>
-                            <img src={folder} className="folder-icon" />
+                            <img src={folder} className="folder-icon" alt="Projects Folder"/>
                             <span>Proyectos</span>
                         </div>
                         <div className="folder" onClick={() => openModal('utils')}>
-                            <img src={folder} className="folder-icon" />
+                            <img src={folder} className="folder-icon" alt="Utils Folder"/>
                             <span>Utilidades</span>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default function Briefcase2() {
                                         <li key={item.id} onClick={() => handleSubfolderClick(item)} className="tecnology-button-brief">
                                             <div className="folder" onClick={() => openModal('projects')}>
                                                 <div className="folder-icon-container" style={{ width: '50px', height: '50px' }}>
-                                                    <img src={folder} className="folder-icon" />
+                                                    <img src={folder} className="folder-icon" alt='folder'/>
                                                     <img src={item.image} alt={item.subcarpeta} className="folder-image" />
                                                 </div>
                                                 <span className="folder-text">{item.subcarpeta}</span>

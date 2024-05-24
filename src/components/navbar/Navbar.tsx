@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { IoSearchSharp } from "react-icons/io5";
+/* import { IoSearchSharp } from "react-icons/io5"; */
 import perfil from "../../images/10.png"
 import SidebarComponent from '../sidebar/Sidebar';
 import "../../styles/navbar.css"
@@ -29,7 +29,7 @@ export default function Navbar() {
         const handleResize = () => {
             if (window.innerWidth >= 1000) {
                 setShowProfileText(false);
-                setShowSidebar(false); // Close sidebar on large screens
+                setShowSidebar(false); 
 
             } else {
                 setShowProfileText(true);
@@ -75,44 +75,51 @@ export default function Navbar() {
         document.body.classList.toggle('dark');
     };
 
+
     return (
         <div>
             <div className={`navbar-big ${showNavbar ? '' : 'hidden'}`}>
 
                 <div className="nav">
-                    <a href="#Home" className='img-perfil'>
+                    <a href="#home" className='img-perfil'>
                         <img src={perfil} alt="" />
                     </a>
 
                 </div>
-                <div className="search-box">
-                    <form>
-                        <input type="text" name="search" id="srch" placeholder="Search" />
+                {/* <div className="search-box">
+                    <form onSubmit={handleSearch}>
+                        <input
+                            type="text"
+                            name="search"
+                            id="srch"
+                            placeholder="Search"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)} />
                         <button type="submit">
                             <IoSearchSharp />
                         </button>
                     </form>
-                </div>
+                </div> */}
                 <ul className={active}>
                     <li className="nav-links">
                         <a href="#about" className='Linklist'>Sobre Mi</a>
                     </li>
                     <li className="nav-links">
 
-                        <a href="#experience" className='Linklist'>Experiencia</a>
+                        <a href="#experience" className='Linklist'>mi Experiencia</a>
                     </li>
                     <li className="nav-links">
 
-                        <a href="#briefcase" className='Linklist'>Proyectos</a>
+                        <a href="#briefcase" className='Linklist'>Mis Proyectos</a>
                     </li>
                     <li className="nav-links">
 
                         <a href="#contact" className='Linklist'>Contactame</a>
                     </li>
-                    <li className="nav-links">
+                    {/* <li className="nav-links">
 
                         <a href="#blog" className='Linklist'>Blog</a>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className="toggle-switch-nav" onClick={toggleDarkMode}>
                     <span className="switch-btn"></span>
