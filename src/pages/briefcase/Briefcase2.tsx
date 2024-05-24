@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal';
 import "../../styles/briefcase.css";
-import { FaFolder } from 'react-icons/fa';
 import dataBriefcase from '../../data/data-briefcase';
 import Footer2 from '../../components/footer/Footer2';
 import { IoClose } from 'react-icons/io5';
