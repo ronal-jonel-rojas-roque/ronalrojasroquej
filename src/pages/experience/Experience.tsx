@@ -15,8 +15,13 @@ interface WorkExperience {
   fechaStart: string;
   fechaEnd: string;
   parraf: string;
-  logros: string;
+  logros?: string;
+  logros2?: string;
+  logros3?: string;
+  logros4?: string;
+  logros5?: string;
   tecnology: string[];
+  link?: string;
 }
 const formatDate = (dateString: string) => {
   if (dateString.toLowerCase() === 'actualidad') {
@@ -24,7 +29,7 @@ const formatDate = (dateString: string) => {
   }
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short' };
   const date = new Date(dateString.split('-').reverse().join('-'));
-  return date.toLocaleDateString('en-US', options);
+  return date.toLocaleDateString('es-ES', options);
 };
 
 export default function Experience() {
@@ -32,6 +37,10 @@ export default function Experience() {
 
   const handleClick = (work: WorkExperience) => {
     setSelectedWork(work);
+  };
+
+  const hasLogros = (work: WorkExperience) => {
+    return work.logros || work.logros2 || work.logros3 || work.logros4 || work.logros5;
   };
 
   return (
@@ -57,7 +66,12 @@ export default function Experience() {
                 <div className="title-work-rigth">
                   <span className='title'>{selectedWork.subtitle}</span>
                   <span className='especialidad'>{selectedWork.especialidad}</span>
-                  <AiOutlineGlobal className='icon-global'/>
+                  {selectedWork.link && (
+                    <a href={selectedWork.link} target="_blank" rel="noopener noreferrer">
+                      <AiOutlineGlobal className='icon-global' />
+                    </a>
+                  )}
+
                 </div>
                 <div className="div-fec">
                   <span className='fecha'>{formatDate(selectedWork.fechaStart)}</span>
@@ -69,16 +83,51 @@ export default function Experience() {
                     <BsFillArrowThroughHeartFill className='icon-detalle' />
                     <span className='parraf1'>{selectedWork.parraf}</span>
                   </div>
-                  <div className="span-detalle">
-                    <BsFillArrowThroughHeartFill className='icon-detalle' />
-                    <span className='logros'>{selectedWork.logros}</span>
-                  </div>
-                  <div className="span-tecnology tecnology-container">
-                    {selectedWork.tecnology.map((tech, index) => (
-                      <span key={index} className="tecnology-button">
-                        {tech}
-                      </span >
-                    ))}
+                  {hasLogros(selectedWork) && (
+                    <div className="span-resposability">
+                      <h3>Responsabilidades destacadas:</h3>
+                      {selectedWork.logros && (
+                        <div className="resposability">
+                          <BsFillArrowThroughHeartFill className='icon-detalle' />
+                          <span className='logros'>{selectedWork.logros}</span>
+                        </div>
+                      )}
+                      {selectedWork.logros2 && (
+                        <div className="resposability">
+                          <BsFillArrowThroughHeartFill className='icon-detalle' />
+                          <span className='logros'>{selectedWork.logros2}</span>
+                        </div>
+                      )}
+                      {selectedWork.logros3 && (
+                        <div className="resposability">
+                          <BsFillArrowThroughHeartFill className='icon-detalle' />
+                          <span className='logros'>{selectedWork.logros3}</span>
+                        </div>
+                      )}
+                      {selectedWork.logros4 && (
+                        <div className="resposability">
+                          <BsFillArrowThroughHeartFill className='icon-detalle' />
+                          <span className='logros'>{selectedWork.logros4}</span>
+                        </div>
+                      )}
+                      {selectedWork.logros5 && (
+                        <div className="resposability">
+                          <BsFillArrowThroughHeartFill className='icon-detalle' />
+                          <span className='logros'>{selectedWork.logros5}</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  <div className="tecnology-container">
+                    <h3> Tecnologias usadas:</h3>
+                    <div className="span-tecnology">
+                      {selectedWork.tecnology.map((tech, index) => (
+                        <span key={index} className="tecnology-button">
+                          {tech}
+                        </span >
+                      ))}
+                    </div>
+
                   </div>
                 </div>
               </div>

@@ -28,11 +28,11 @@ export default function EndMotiv() {
                 particle.style.top = `${randomY}px`;
                 setTimeout(() => {
                     particle.remove();
-                }, 1000);
+                }, 2000);
             }
         };
 
-        const intervalId = setInterval(generateParticles, 3000);
+        const intervalId = setInterval(generateParticles, 4000);
 
         return () => clearInterval(intervalId);
     }, []);

@@ -37,17 +37,25 @@
 }
 
 .content-img {
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    
+    border-radius: 10px;
+    
 }
-
+.content-img img{
+    max-width: 300px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.555);
+}
 .content-img .date-contact {
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
     height: 100%;
     top: -20px;
     position: relative;

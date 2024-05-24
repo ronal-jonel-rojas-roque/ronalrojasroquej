@@ -1,0 +1,115 @@
+.modal-detalle {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 55%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: var(--body-color);
+    margin: auto;
+    border-radius: 8px;
+    max-width: 90%;
+    min-height: 500px;
+    overflow: auto;
+    border: 3px solid #012B51;
+    color: var(--text-color);
+    user-select: none;
+}
+.modal-header{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.close-button{
+    background-color: red;
+    border-radius: 50%;
+}
+.modal-content-detalle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 70vh;
+}
+
+.demo-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.img-carrusel {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.details-data-modal {
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.details-data-modal h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'MyFontRancho', cursive;
+    padding: 5px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.tecnologi-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technology-item {
+    width: 100px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.technology-item .tecnology-image {
+    max-width: 50px;
+    margin-bottom: 5px;
+}
+
+.technology-item span {
+    font-size: .8rem;
+}
+
+.demo-carousel,
+.details,
+.map-container {
+    margin-bottom: 20px;
+}
+
+.map-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
