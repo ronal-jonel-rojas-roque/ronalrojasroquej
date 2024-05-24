@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "../../styles/briefcase.css";
 import dataBriefcase from '../../data/data-briefcase';
 import datatecnology from '../../data/data-tecnology';
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import ModalDetalle from '../../components/modal/ModalDetalle';
 import Modal from 'react-modal';
 import { IoClose } from 'react-icons/io5';
+import Typed from 'typed.js';
 
 interface TechImageMap {
     [key: string]: string;
@@ -32,9 +33,39 @@ export default function Briefcase() {
         setSelectedProject(null);
         setIsModalOpen(false);
     };
+
+    useEffect(() => {
+        // Configuración de Typed.js
+        const options = {
+            strings: ['Este apartado aun no esta completo ',  'Por el momento solo disfruta del diseño'],
+            typeSpeed: 75,
+            backSpeed: 75,
+            backDelay: 1500,
+            cursorChar: '|',
+            starDelay: 300,
+            loop: true,
+            showCursor: true,
+            contentType: 'html',
+        };
+
+        // Inicializar Typed.js
+        const typed = new Typed('.typede', options);
+
+        // Detener la animación al desmontar el componente
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
         <div className="Briefcase">
-            <h2>3. PROYECTOS</h2>
+            <div className="head-brief">
+                <h2>3. PROYECTOS</h2>
+            <p className='p-Briefcase-title'>
+                Disculpen las molestias: <span className='typede'></span>
+              </p>
+            </div>
+            
             <div className="briefcase-container">
                 {projects.map(project => (
                     <div key={project.id} className="briefcase-item">
@@ -77,7 +108,7 @@ export default function Briefcase() {
                         <IoClose onClick={closeModal} className="close-button-contact">X</IoClose>
                     </div>
                     <div className="modal-content-detalle">
-                        <ModalDetalle/>
+                        <ModalDetalle />
                     </div>
                 </Modal>
             }

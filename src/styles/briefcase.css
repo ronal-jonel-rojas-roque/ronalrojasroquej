@@ -8,13 +8,37 @@
     user-select: none;
 }
 
+.head-brief {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 150px;
+}
+
+.p-Briefcase-title {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.p-Briefcase-title .typede {
+    text-transform: uppercase;
+    color: #0E9AE2;
+    font-size: 1.4rem;
+    font-family: 'MyFontRancho', cursive;
+}
+
+
 .Briefcase h2 {
     font-size: 2rem;
     font-family: "MyFontFuncity", sans-serif;
     padding: 2rem 0 1rem 0;
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 
 }
 
@@ -310,7 +334,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    
+
     flex-direction: column;
     overflow-y: auto;
 }

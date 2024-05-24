@@ -22,6 +22,8 @@ export default function Contact() {
     setIsModalOpen(false);
   };
 
+  
+
   return (
     <div>
       <div className="Contact-Home" id='contact'>
