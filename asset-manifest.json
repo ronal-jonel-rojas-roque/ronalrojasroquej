@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/css/main.1fb1a782.css",
-    "main.js": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/main.e6e3be62.js",
+    "main.js": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/main.5ba2fc5e.js",
     "static/js/453.e268910c.chunk.js": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/453.e268910c.chunk.js",
     "static/media/earth.png": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/media/earth.ace4392804a5e7bc0c4a.png",
     "static/media/portafolio3.png": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/media/portafolio3.1f9dea9640a5332ee267.png",
@@ -48,11 +48,11 @@
     "static/media/dtodo.jpg": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/media/dtodo.075d76bc54d8d990f722.jpg",
     "index.html": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/index.html",
     "main.1fb1a782.css.map": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/css/main.1fb1a782.css.map",
-    "main.e6e3be62.js.map": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/main.e6e3be62.js.map",
+    "main.5ba2fc5e.js.map": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/main.5ba2fc5e.js.map",
     "453.e268910c.chunk.js.map": "https://ronal-jonel-rojas-roque.github.io/ronalrojasroquej/static/js/453.e268910c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1fb1a782.css",
-    "static/js/main.e6e3be62.js"
+    "static/js/main.5ba2fc5e.js"
   ]
 }
