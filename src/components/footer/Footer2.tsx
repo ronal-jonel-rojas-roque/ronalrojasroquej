@@ -25,7 +25,7 @@ export default function Footer2() {
         <div>
             <div className="footer">
                 <div className="footer-left">
-                    <Link to="/" className='window-link'>
+                    <Link to="/ronalrojasroquej" className='window-link'>
                         <FaWindows className="icon-window" />
                     </Link>
 

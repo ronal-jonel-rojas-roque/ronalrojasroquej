@@ -96,7 +96,7 @@ export default function Briefcase() {
                 ))}
 
             </div>
-            <Link to="/briefcase" className='Btn-detalles brief-detalle'>Quieres ver mas?</Link>
+            <Link to="/ronalrojasroquej/briefcase" className='Btn-detalles brief-detalle'>Quieres ver mas?</Link>
             {selectedProject &&
                 <Modal isOpen={isModalOpen}
                     onRequestClose={closeModal}
